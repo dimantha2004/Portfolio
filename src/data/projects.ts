@@ -1,0 +1,60 @@
+import { Project } from '../types';
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    title: 'E-Commerce Final Project',
+    description: 'A comprehensive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing capabilities.',
+    technologies: ['Spring Boot', 'React', 'MySQL', 'REST API', 'JWT'],
+    githubUrl: 'https://github.com/dimantha2004/ecommerce-platform',
+    demoUrl: 'https://ecommerce-demo.example.com',
+    imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  },
+  {
+    id: 2,
+    title: 'Squid Game 3D',
+    description: 'An interactive 3D game inspired by the popular series, built using Three.js for immersive gameplay experience.',
+    technologies: ['Three.js', 'JavaScript', 'HTML5', 'CSS3'],
+    githubUrl: 'https://github.com/dimantha2004/squid-game-3d',
+    demoUrl: 'https://squid-game-3d.example.com',
+    imageUrl: 'https://images.pexels.com/photos/2521159/pexels-photo-2521159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  },
+  {
+    id: 3,
+    title: 'Library Management System',
+    description: 'A desktop application for managing library resources, including book inventory, member management, and lending operations.',
+    technologies: ['JavaFX', 'MySQL', 'CSS'],
+    githubUrl: 'https://github.com/dimantha2004/library-management',
+    imageUrl: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  },
+  {
+    id: 4,
+    title: 'MOS Burger Shop Backend',
+    description: 'Backend system for a food business, handling order processing, inventory management, and customer data.',
+    technologies: ['Spring Boot', 'JavaScript', 'REST API', 'MySQL'],
+    githubUrl: 'https://github.com/dimantha2004/mos-burger-backend',
+    imageUrl: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  },
+  {
+    id: 5,
+    title: 'ATM & CDM Flow UIs',
+    description: 'User interface designs for ATM and Cash Deposit Machine flows, currently deployed at BOC Monaragala Branch.',
+    technologies: ['UI/UX Design', 'JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/dimantha2004/bank-ui-flows',
+    imageUrl: 'https://images.pexels.com/photos/929288/pexels-photo-929288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  },
+  {
+    id: 6,
+    title: 'BOC Feedback System',
+    description: 'A customer feedback collection and analysis system, currently in use at BOC Monaragala Branch.',
+    technologies: ['React', 'Node.js', 'MySQL', 'Express'],
+    githubUrl: 'https://github.com/dimantha2004/boc-feedback-system',
+    imageUrl: 'https://images.pexels.com/photos/7709292/pexels-photo-7709292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    featured: true,
+  }
+];
