@@ -30,10 +30,10 @@ const Contact: React.FC = () => {
     
     try {
       await emailjs.sendForm(
-        'service_your_service_id', // Replace with your EmailJS service ID
+        'service_1rttxfj', // Replace with your EmailJS service ID
         'template_your_template_id', // Replace with your EmailJS template ID
         formRef.current,
-        'your_public_key' // Replace with your EmailJS public key
+        '577XuUlIu6byXXQXU' // Replace with your EmailJS public key
       );
 
       setFormStatus('success');
