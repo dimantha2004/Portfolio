@@ -3,7 +3,7 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Final Project',
+    title: 'Dimaz Online Shop(E-Commerce',
     description: 'A comprehensive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing capabilities.',
     technologies: ['Spring Boot', 'React', 'MySQL', 'REST API', 'JWT'],
     githubUrl: 'https://github.com/dimantha2004/ecommerce-platform',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'MOS Burger Shop Backend',
+    title: 'MOS Burger Shop',
     description: 'Backend system for a food business, handling order processing, inventory management, and customer data.',
     technologies: ['Spring Boot', 'JavaScript', 'REST API', 'MySQL'],
     githubUrl: 'https://github.com/dimantha2004/mos-burger-backend',
