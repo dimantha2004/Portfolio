@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
         >
           <div className="aspect-square overflow-hidden rounded-full border-4 border-primary-200 dark:border-primary-700 shadow-xl">
             <img
-              src="/WhatsAp Image 2025-05-20 at 12.13.33_4e6e3509.jpg"
+              src="/WhatsApp Image 2025-05-20 at 12.13.33_4e6e3509.jpg"
               alt="Dimantha"
               className="w-full h-full object-cover"
             />
