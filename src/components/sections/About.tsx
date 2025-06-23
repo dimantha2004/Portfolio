@@ -36,6 +36,13 @@ const About: React.FC = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">About Me</h2>
           <div className="w-20 h-1 bg-primary-500 mx-auto mb-6 rounded-full"></div>
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors font-semibold"
+          >
+            Download Resume
+          </a>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -49,10 +56,7 @@ const About: React.FC = () => {
   <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Who I Am</h3>
   
   <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed text-lg">
-    I'm <span className="font-semibold text-blue-600 dark:text-blue-400">Dimantha</span>, a passionate and versatile 
-    <span className="font-medium"> Full-Stack Developer</span> with a deep love for creating digital experiences that matter. 
-    With expertise spanning from robust backend architectures to immersive frontend interfaces, I bring ideas to life 
-    through clean, scalable code and thoughtful design.
+    I'm <span className="font-semibold text-blue-600 dark:text-blue-400">Dimantha</span>, a results-driven <span className="font-medium">Full-Stack Developer</span> with a passion for building impactful digital products. I specialize in scalable web and desktop applications, blending robust backend architectures with immersive frontend experiences. My expertise includes <span className="font-medium">Java, Spring Boot, React, UI/UX, and cloud solutions</span>.
   </p>
 
   <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-lg border-l-4 border-blue-500">

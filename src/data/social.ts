@@ -8,7 +8,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/dimantha-nishshanka-07a1a4369/',
+    url: 'https://www.linkedin.com/in/theekshana-dimantha-b9803536b',
     icon: 'Linkedin'
   },
   {
