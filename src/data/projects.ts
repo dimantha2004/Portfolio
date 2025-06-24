@@ -18,7 +18,7 @@ export const projects: Project[] = [
     technologies: ['Three.js', 'JavaScript', 'HTML5', 'CSS3'],
     githubUrl: 'https://github.com/dimantha2004/squid-game-3d',
     demoUrl: 'https://squid-game-3d.example.com',
-    imageUrl: 'https://images.pexels.com/photos/2521159/pexels-photo-2521159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    imageUrl: 'https://www.npr.org/assets/img/2021/10/16/squid-game_custom-7c6e2b6e7b6e2b6e7b6e2b6e7b6e2b6e7b6e2b6e.jpg',
     featured: true,
   },
   {
