@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: #e5e7eb;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 4px;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a1a1aa #e5e7eb;
+}
+
+/* Enhanced markdown (prose) styles for project modal */
+.prose.prose-lg {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.prose h1, .prose h2, .prose h3 {
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.prose h1 {
+  font-size: 2.2rem;
+}
+.prose h2 {
+  font-size: 1.6rem;
+}
+.prose h3 {
+  font-size: 1.3rem;
+}
+.prose p {
+  margin-bottom: 1em;
+}
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.prose a:hover {
+  color: #1e40af;
+}
+.prose code {
+  background: #f3f4f6;
+  color: #d97706;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.98em;
+}
+.prose pre {
+  background: #18181b;
+  color: #facc15;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+.prose blockquote {
+  border-left: 4px solid #60a5fa;
+  background: #f0f9ff;
+  color: #334155;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+.prose ul, .prose ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.prose li {
+  margin-bottom: 0.5em;
+}
+.prose img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}

@@ -59,8 +59,8 @@ const Hero: React.FC = () => {
           <motion.h1
             className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 dark:text-white font-inter drop-shadow-lg"
             variants={textVariants}
-            initial="hidden"
-            animate="visible"
+          initial="hidden"
+          animate="visible"
           >
             {letters.map((letter, i) => (
               <motion.span key={i} variants={letterVariants} className="inline-block">

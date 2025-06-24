@@ -185,7 +185,7 @@ const Projects: React.FC = () => {
             onClick={closeModal}
           >
             <motion.div
-              className="bg-white dark:bg-gray-900 rounded-lg shadow-2xl max-w-lg w-full p-8 relative"
+              className="bg-white dark:bg-gray-900 rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] p-8 relative overflow-auto"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
@@ -264,7 +264,10 @@ const Projects: React.FC = () => {
                 {readmeLoading ? (
                   <div className="text-gray-500 text-sm">Loading project details...</div>
                 ) : readme ? (
-                  <div className="prose max-w-none dark:prose-invert">
+                  <div
+                    className="prose prose-lg max-w-none dark:prose-invert bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-inner custom-scrollbar"
+                    style={{ maxHeight: '60vh', minHeight: '200px', overflow: 'auto' }}
+                  >
                     <ReactMarkdown>{readme}</ReactMarkdown>
                   </div>
                 ) : (
