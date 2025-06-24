@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: 'Dimaz Online Shop(E-Commerce',
     description: 'A comprehensive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing capabilities.',
     technologies: ['Spring Boot', 'React', 'MySQL', 'REST API', 'JWT'],
-    githubUrl: 'https://github.com/dimantha2004/ecommerce-platform',
+    githubUrl: 'https://github.com/dimantha2004/E-Commerce-Final-Project-By-Springboot-React',
     demoUrl: 'https://ecommerce-demo.example.com',
     imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     featured: true,

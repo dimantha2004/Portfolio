@@ -4,12 +4,15 @@ import { Github as GitHub, ExternalLink } from 'lucide-react';
 import Card from '../ui/Card';
 import { projects } from '../../data/projects';
 import type { Project } from '../../types';
+import ReactMarkdown from 'react-markdown';
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [githubData, setGithubData] = useState<any>(null);
   const [githubLoading, setGithubLoading] = useState(false);
+  const [readme, setReadme] = useState<string | null>(null);
+  const [readmeLoading, setReadmeLoading] = useState(false);
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
@@ -41,11 +44,54 @@ const Projects: React.FC = () => {
   useEffect(() => {
     if (selectedProject && selectedProject.githubUrl) {
       setGithubLoading(true);
-      // Placeholder for fetch logic
       setGithubData(null);
-      setTimeout(() => {
+      setReadme(null);
+      setReadmeLoading(true);
+      // Extract owner and repo from githubUrl
+      const match = selectedProject.githubUrl.match(/github.com\/(.+?)\/(.+?)(?:$|\/)/);
+      if (match) {
+        const owner = match[1];
+        const repo = match[2];
+        // Fetch repo details
+        fetch(`https://api.github.com/repos/${owner}/${repo}`)
+          .then(res => res.json())
+          .then(data => {
+            setGithubData({
+              stars: data.stargazers_count,
+              forks: data.forks_count,
+              language: data.language,
+              updatedAt: data.updated_at ? new Date(data.updated_at).toLocaleDateString() : '--',
+            });
+            setGithubLoading(false);
+          })
+          .catch(() => setGithubLoading(false));
+        // Try to fetch README from main, then master, and try both README.md and readme.md
+        const tryReadme = async () => {
+          const branches = ['main', 'master'];
+          const filenames = ['README.md', 'readme.md'];
+          let found = false;
+          for (const branch of branches) {
+            for (const filename of filenames) {
+              const url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filename}`;
+              try {
+                const res = await fetch(url);
+                if (res.ok) {
+                  const text = await res.text();
+                  setReadme(text);
+                  found = true;
+                  break;
+                }
+              } catch {}
+            }
+            if (found) break;
+          }
+          setReadmeLoading(false);
+        };
+        tryReadme();
+      } else {
         setGithubLoading(false);
-      }, 500);
+        setReadmeLoading(false);
+      }
     }
   }, [selectedProject]);
 
@@ -210,6 +256,19 @@ const Projects: React.FC = () => {
                     <ExternalLink size={18} className="mr-1" />
                     <span>Live Demo</span>
                   </a>
+                )}
+              </div>
+              {/* README section */}
+              <div className="mt-8">
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Project Details (README)</h4>
+                {readmeLoading ? (
+                  <div className="text-gray-500 text-sm">Loading project details...</div>
+                ) : readme ? (
+                  <div className="prose max-w-none dark:prose-invert">
+                    <ReactMarkdown>{readme}</ReactMarkdown>
+                  </div>
+                ) : (
+                  <div className="text-gray-400 text-sm">No README found for this project.</div>
                 )}
               </div>
             </motion.div>
