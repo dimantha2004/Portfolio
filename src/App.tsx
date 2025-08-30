@@ -3,6 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
+import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import GitHub from './components/sections/GitHub';
 import Contact from './components/sections/Contact';
@@ -20,6 +21,7 @@ function App() {
         <main>
           <Hero />
           <About />
+          <Experience />
           <Projects />
           <GitHub />
           <Contact />
