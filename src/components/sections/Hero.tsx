@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
             className="space-y-4 mb-12"
           >
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium">
-              Full-Stack Developer & UI/UX Enthusiast
+              Software Engineer @Syigen Pvt Ltd
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl">
               Crafting innovative digital solutions that transform ideas into impactful user experiences. 
