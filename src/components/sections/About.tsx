@@ -36,13 +36,6 @@ const About: React.FC = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">About Me</h2>
           <div className="w-20 h-1 bg-primary-500 mx-auto mb-6 rounded-full"></div>
-          <a
-            href="/resume.pdf"
-            download
-            className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors font-semibold"
-          >
-            Download Resume
-          </a>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
