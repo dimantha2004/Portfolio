@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           href="#home" 
           className="text-2xl font-bold text-primary-600 dark:text-primary-400"
         >
-          Dimantha
+          
         </a>
 
         {/* Desktop Navigation */}
