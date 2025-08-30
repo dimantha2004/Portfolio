@@ -106,10 +106,8 @@ const Hero: React.FC = () => {
               Full-Stack Developer & UI/UX Enthusiast
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl">
-              Crafting digital experiences with <span className="font-semibold text-primary-600 dark:text-primary-400">Java</span>, 
-              <span className="font-semibold text-primary-600 dark:text-primary-400"> React</span>, and 
-              <span className="font-semibold text-primary-600 dark:text-primary-400"> modern cloud solutions</span>. 
-              Passionate about building scalable applications that make a difference.
+              Crafting innovative digital solutions that transform ideas into impactful user experiences. 
+              Specializing in end-to-end development with a focus on scalable architecture and intuitive design.
             </p>
           </motion.div>
           <motion.div
